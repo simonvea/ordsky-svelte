@@ -1,4 +1,5 @@
 <script>
+  import countWords from "../utils/countWords.js";
   export let onSubmit;
   let text = "";
   let notification = "";
@@ -6,7 +7,8 @@
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(text);
+    const countedWords = countWords(text);
+    console.log(countedWords);
     if (!text) {
       notification = "Du må legge inn tekst før du kan generere en ordsky.";
       setTimeout(() => (notification = ""), 5000);
