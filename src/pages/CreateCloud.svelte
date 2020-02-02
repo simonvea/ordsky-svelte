@@ -1,1 +1,5 @@
-<p>Hello</p>
+<script>
+  import TextForm from "../components/TextForm.svelte";
+</script>
+
+<TextForm />
