@@ -5,8 +5,17 @@
   let stage = 0;
 </script>
 
+<style>
+  .header__link {
+    color: inherit;
+    text-decoration: none;
+  }
+</style>
+
 <header class="header">
-  <h1 class="header__title">{title}</h1>
+  <h1 class="header__title">
+    <a href="/" class="header__link">{title}</a>
+  </h1>
 </header>
 <main class="main-container">
   {#if stage === 0}
